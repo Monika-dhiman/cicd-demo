@@ -10,7 +10,7 @@ app.use(express.json());
 // Simple Routes
 app.get("/", (req, res) => {
   res.json({
-    message: "CI/CD with PM2 local testing.............",
+    message: "Local CI/CD with PM2 testing.............",
     pid: process.pid,
     cpu: os.cpus().length
   });

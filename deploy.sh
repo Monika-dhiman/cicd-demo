@@ -2,7 +2,7 @@
 
 # ===== CONFIG =====
 PROD_PATH="D:/Learning/local-cicd/local-cicd-prod"
-APP_NAME="app-prod"
+APP_NAME="local-cicd-prod"
 
 echo "🚀 Starting Deployment..."
 
