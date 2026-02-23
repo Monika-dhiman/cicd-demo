@@ -4,8 +4,9 @@
   "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "test": "echo \"No tests yet\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "monika",
   "license": "ISC",

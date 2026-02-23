@@ -10,7 +10,7 @@ app.use(express.json());
 // Simple Routes
 app.get("/", (req, res) => {
   res.json({
-    message: "PM2 Demo App Running 🚀",
+    message: "CI/CD Demo App Running 🚀",
     pid: process.pid,
     cpu: os.cpus().length
   });
