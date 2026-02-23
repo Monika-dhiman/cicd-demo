@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "pm2-cicd-demo-app",
+      name: "local-cicd-prod",
       script: "server.js",
       //   instances: "max", // Use all available CPU cores for clustering
       instances: 1,
