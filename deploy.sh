@@ -2,17 +2,19 @@
 
 # ===== CONFIG =====
 PROD_PATH="D:/Learning/local-cicd/local-cicd-prod"
-APP_NAME="local-cicd-prod"
+APP_NAME="app-prod"
 
 echo "🚀 Starting Deployment..."
 
-echo "📂 Syncing files to production..."
+echo "📂 Cleaning production folder..."
 
-# Copy all project files except node_modules and .git
-rsync -av --delete \
-  --exclude '.git' \
-  --exclude 'node_modules' \
-  ./ "$PROD_PATH"
+# Remove old files
+rm -rf "$PROD_PATH"/*
+
+echo "📂 Copying project files..."
+
+# Copy everything except .git and node_modules
+cp -r * "$PROD_PATH"
 
 cd "$PROD_PATH"
 
