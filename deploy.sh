@@ -14,6 +14,6 @@ echo "📦 Installing dependencies..."
 npm install
 
 echo "🔄 Restarting app..."
-pm2 startOrRestart ecosystem.config.js --env production
+pm2 restart ecosystem.config.js 
 
 echo "✅ Deployment Completed!"
